@@ -1,0 +1,22 @@
+.app {
+  background: darkslategray;
+  min-width: 100vh;
+  min-height: 100vh;
+}
+
+.input-wrapper {
+  width: 40%;
+  height: 50%;
+  margin: 15%;
+}
+.input-wrapper .todo-input {
+  width: 100%;
+  height: 70%;
+}
+
+.todo {
+  background: red;
+  min-width: 100%;
+  min-height: 100%;
+}
+
