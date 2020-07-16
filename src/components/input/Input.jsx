@@ -4,7 +4,7 @@ import './style.less'
 function Input () {
     return(
         <div className = 'input-wrapper'>
-            <input className='todo-input' type='text'></input>
+            <textarea className='todo-input' type='text'></textarea>
         </div>
     )
 }

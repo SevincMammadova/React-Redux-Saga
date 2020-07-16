@@ -1,22 +1,121 @@
 .app {
-  background: darkslategray;
-  min-width: 100vh;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("images/cool-background (1).png");
 }
 
 .input-wrapper {
-  width: 40%;
-  height: 50%;
-  margin: 15%;
+  margin: 3%;
+  width: 70%;
+  height: 100%;
 }
 .input-wrapper .todo-input {
-  width: 100%;
-  height: 70%;
+  width: 110%;
+  height: 40%;
+  overflow: auto;
+  resize: none;
+  font-size: 24px;
 }
 
 .todo {
-  background: red;
-  min-width: 100%;
-  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  width: 600px;
+  margin: auto;
+  margin-top: 5%;
+  background-image: linear-gradient(to right top, #2b40c8, #2f3da7, #323a87, #333667, #313148);
+  opacity: 1%;
+}
+.todo .head {
+  display: flex;
+  margin: 1%;
+  flex-direction: row;
+  justify-content: center;
+  height: 20%;
+  background: #3d157a;
+}
+.todo .todo-body {
+  overflow: auto;
+}
+
+.button-wrapper {
+  margin: 3%;
+  width: 15%;
+  height: 100%;
+}
+.button-wrapper .add-button {
+  margin: 3%;
+  width: 80%;
+  height: 40%;
+  background-color: #ededed;
+  border-radius: 15px;
+  display: inline-block;
+  cursor: pointer;
+  color: #3a8a9e;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 7px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #e1e2ed;
+  border: none;
+}
+.button-wrapper .add-button:hover {
+  background-color: #426ff5;
+  color: #ffffff;
+}
+.button-wrapper .add-button:active {
+  position: relative;
+  top: 1px;
+}
+
+.item-wrapper {
+  height: 15%;
+  width: 94%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 3%;
+  background: #5667cc;
+}
+.item-wrapper .text-wrapper {
+  margin: 2%;
+  width: 97%;
+  height: auto;
+  overflow: auto;
+}
+.item-wrapper .text-wrapper .text {
+  font-family: "Segoe Script";
+  font-size: 120%;
+  font-weight: bold;
+  color: white;
+}
+.item-wrapper .button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.item-wrapper .button-wrapper .delete-button {
+  width: 30%;
+  height: 30%;
+  background: #3a1163;
+  border: none;
+  margin-top: 2%;
+  color: white;
+  transition: transform 0.2s;
+}
+.item-wrapper .button-wrapper .delete-button:hover {
+  transform: scale(1.5);
+  background: #a60e00;
+  font-size: 120%;
+}
+.item-wrapper .button-wrapper .done-button {
+  margin-top: 2%;
+  width: 35%;
+  height: 35%;
 }
 

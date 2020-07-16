@@ -1,0 +1,52 @@
+.item-wrapper{
+  height: 15%;
+  width: 94%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 3%;
+  background: #5667cc;
+
+  .text-wrapper{
+    margin: 2%;
+    width: 97%;
+    height: auto;
+    overflow: auto;
+
+
+    .text{
+      font-family: "Segoe Script";
+      font-size: 120%;
+      font-weight: bold;
+      color: white;
+    }
+  }
+  .button-wrapper{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+
+    .delete-button{
+      width: 30%;
+      height: 30%;
+      background: #3a1163;
+      border: none;
+      margin-top: 2%;
+      color: white;
+      transition: transform .2s;
+      &:hover{
+        transform: scale(1.5);
+        background: #a60e00;
+        font-size: 120%;
+      }
+    }
+
+    .done-button{
+      margin-top: 2%;
+      width: 35%;
+      height: 35%;
+    }
+
+  }
+
+}
